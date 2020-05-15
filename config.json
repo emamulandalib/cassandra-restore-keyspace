@@ -1,6 +1,0 @@
-{
-  "cassandra_data_dir": "/mnt/linux_general/Projects/GP/MCMS/cassandra_restore_structure/data/snapshots",
-  "tag": "may-13-20",
-  "destination": "/mnt/linux_general/Projects/GP/MCMS/cassandra_restore_structure/data/restore",
-  "key_space": "prod_sys_user"
-}
