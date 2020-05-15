@@ -1,6 +1,6 @@
-# Restore Cassandra KeySpace
+# Restore Cassandra KeySpaces
 
-##### This repository contains code to restore data to cassandra after taking the snapshot using **nodetool**
+This repository contains code to restore data to cassandra after taking the snapshot using **nodetool**.
 
 #### Usage
 
