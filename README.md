@@ -4,7 +4,7 @@ This repository contains code to restore data to cassandra after taking the snap
 
 #### Usage
 
-- Download the latest release from [here](https://github.com/emamulandalib/cassandra-restore-keyspace/releases)
+- Download the latest release from [here](https://github.com/emamulandalib/cassandra-restore-keyspace/releases/download/v0.0.1/cassandra_restore_keyspace)
 - `chmod +x cassandra_restore_keyspace`
 - `touch config.json`
 - Place the code into `config.json`. Modify with proper values.
