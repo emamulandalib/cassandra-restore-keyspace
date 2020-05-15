@@ -17,7 +17,7 @@ This repository contains code to restore data to cassandra after taking the snap
 }
 ```
 - Run: `./cassandra_restore_keyspace --config config.json`
-- You will get structure like below into the destination folder.
+- You will get a structure like below into the destination folder.
 ```$xslt
 .
 └── keyspace
@@ -44,5 +44,5 @@ This repository contains code to restore data to cassandra after taking the snap
     │   ├── md-1-big-TOC.txt
     │   └── schema.cql
 ```
-- For any kind of errors check message properly.
+- For any kind of errors check the message properly.
 - For possible options: `./cassandra_restore_keyspace -h`
