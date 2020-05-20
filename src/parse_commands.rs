@@ -1,6 +1,6 @@
 use std::{
-    fs::{read_to_string},
     path::Path,
+    fs::{read_to_string},
 };
 use clap::{Arg, App};
 use cassandra_restore_keyspace::Config;
