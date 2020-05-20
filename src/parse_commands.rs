@@ -1,5 +1,3 @@
-extern crate clap;
-
 use std::fs::{read_to_string};
 use std::path::Path;
 use clap::{Arg, App};
