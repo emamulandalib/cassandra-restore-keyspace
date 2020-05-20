@@ -1,5 +1,7 @@
-use std::fs::{read_to_string};
-use std::path::Path;
+use std::{
+    fs::{read_to_string},
+    path::Path,
+};
 use clap::{Arg, App};
 use cassandra_restore_keyspace::Config;
 
