@@ -1,7 +1,7 @@
 use std::fs::{create_dir_all, copy, read_dir};
 use walkdir::{WalkDir, DirEntry};
 use regex::Regex;
-use cassandra_restore_structure::{Config, show_err_msg};
+use cassandra_restore_keyspace::{Config, show_err_msg};
 
 pub struct Restore {
     config: Config

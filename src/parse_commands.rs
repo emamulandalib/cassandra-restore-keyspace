@@ -2,8 +2,9 @@ extern crate clap;
 
 use std::fs::{read_to_string};
 use std::path::Path;
-use cassandra_restore_structure::{Config};
 use clap::{Arg, App};
+use cassandra_restore_keyspace::Config;
+
 
 pub struct ParseCommand {}
 
@@ -17,6 +18,7 @@ impl ParseCommand {
                 .long("--config")
                 .value_name("FILE")
                 .takes_value(true)
+                .required(true)
                 .validator(ParseCommand::is_valid_json_file)
                 .help("Please specify a json file."))
             .get_matches();
@@ -32,9 +34,10 @@ impl ParseCommand {
 
     fn is_valid_json_file(v: String) -> Result<(), String> {
         let path = Path::new(&v);
+        let err_msg = String::from("Should be a valid json file.");
 
         if !path.is_file() {
-            return Err("Should be a file.".to_string());
+            return Err(err_msg);
         }
 
         match path.extension() {
@@ -42,9 +45,9 @@ impl ParseCommand {
                 if e == "json" {
                     return Ok(());
                 }
-                return Err(String::from("Should be a valid json file."));
+                return Err(err_msg);
             }
-            None => Err(String::from("Should be a valid json file."))
+            None => Err(err_msg)
         }
     }
 }

@@ -1,5 +1,5 @@
 [package]
-name = "cassandra_restore_structure"
+name = "cassandra_restore_keyspace"
 version = "0.1.0"
 authors = ["Emamul Andalib <emamul.andalib@gmail.com>"]
 edition = "2018"
