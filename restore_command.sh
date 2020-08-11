@@ -19,4 +19,4 @@ restore_from_csv() {
     done
 }
 
-backup_to_csv
+restore_from_csv
